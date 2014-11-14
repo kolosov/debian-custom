@@ -1,3 +1,8 @@
 mate-desktop-environment
 x11-common
-less
+xbase-clients
+xorg
+xserver-xorg-input-all
+xserver-xorg-video-all
+openvpn
+
