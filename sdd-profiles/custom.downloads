@@ -1,0 +1,34 @@
+#Based on defaults
+grub-pc
+grub-efi
+
+popularity-contest
+console-tools
+console-setup
+
+usbutils
+acpi
+acpid
+eject
+
+# needed for debian-installer's LVM, software RAID or encrypted disks:
+lvm2
+mdadm
+cryptsetup
+
+# to support reiserfs, JFS and XFS filesystems
+reiserfsprogs
+jfsutils
+xfsprogs
+
+# debian-cd uses debootstrap from the mirror
+debootstrap
+
+# initramfs-tools recommends busybox, and we don't yet support recommends
+busybox
+
+# newer debian-cd (0.3.5+) requires syslinux-common or syslinux in the mirror
+syslinux-common
+syslinux
+# newer debian-cd (3.1.5+) requires isolinux
+isolinux
