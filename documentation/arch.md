@@ -18,7 +18,7 @@
 
 1 Installation (Autoinstall)
 ============================
-1.1 Prepare home partition with size 500MB (400MB + 100MB for what?)
+1.1 Prepare home partition with size 500GB (400GB + 100GB for what?)
 
 1.2 Prepare truecrypt --- install dm-crypt
 
