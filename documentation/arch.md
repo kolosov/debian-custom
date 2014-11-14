@@ -66,7 +66,8 @@ Disk format(what disk?? Current with system? What ID is our own?)
 ------------
 
 Simple GUI app
-Button 1: start script 1,4,5 (all script must me executed?)
+Button 1: start script 1,4,5
+
 Button 2: start script 2,5 
 
 
