@@ -62,10 +62,9 @@ finishing all useless process(which?) ignore unsaved files, leave only ones what
 Disk format(what disk?? Current with system? What ID is our own?)
 
 
-2.6 Script 6 (not needed)
+2.6 Script 6 Simple GUI app (not needed)
 ------------
 
-Simple GUI app
 Button 1: start script 1,4,5
 
 Button 2: start script 2,5 
