@@ -59,14 +59,15 @@ finishing all useless process(which?) ignore unsaved files, leave only ones what
 
 2.5 Script 5
 ------------
-Disk format(what disk?? Current with system? What ID is our own?)
+2.5.1 Disk format(what disk?? Current with system? What ID is our own?)
 
 
-2.6 Script 6 (not needed)
+2.6 Script 6
 ------------
+2.6.1 Simple GUI app
 
-Simple GUI app
-Button 1: start script 1,4,5 (all script must me executed?)
+Button 1: start script 1,4,5
+
 Button 2: start script 2,5 
 
 
