@@ -15,4 +15,5 @@ mkdir profiles
 
 cp ../sdd-profiles/* profiles/
 
-build-simple-cdd  -p custom --do-mirror --dist jessie
+build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie
+#build-simple-cdd  -p custom --do-mirror --dist jessie
