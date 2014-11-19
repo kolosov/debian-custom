@@ -32,4 +32,5 @@ mkdir profiles
 cp ../sdd-profiles/* profiles/
 
 build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie
+#build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie --force-root >build_log_1 2>build_log_2
 #build-simple-cdd  -p custom --do-mirror --dist jessie
