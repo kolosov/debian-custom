@@ -1,5 +1,21 @@
 simple-cdd
 ----------
+Introduction:
+We should make own debian-installer mirror to use latest daily builds of debian-installer.
+
+wget -r -np -R *.log* http://d-i.debian.org/daily-images/amd64/daily/
+
+simple-cdd expects directory structure like this:
+
+    installer-amd64/current/images/cdrom/gtk/initrd.gz
+    installer-amd64/current/images/cdrom/gtk/vmlinuz
+    installer-amd64/current/images/cdrom/initrd.gz
+    installer-amd64/current/images/cdrom/vmlinuz
+
+so reproduce similar di directory structure.
+
+Change simple-cdd-custom.conf custom_installer option.
+
 
 Preparation:
 
