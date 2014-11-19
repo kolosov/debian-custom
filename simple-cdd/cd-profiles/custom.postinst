@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# configure NFS
+#echo '/opt/ltsp *(ro,no_root_squash,async)' >> /etc/exports
+
+# configure DHCP (disabled by default, so as not to interfere with existing
+# networks)
+#echo 'include "/etc/ltsp/dhcpd.conf";' >> /etc/dhcp3/dhcpd.conf
+
+#echo `mount` >> /cdd_log_out
+#echo `ls /` >> /cdd_log_out
+echo 'Start install'
+/bin/sh /home/VMware-Workstation-Full-10.0.4-2249910.x86_64.bundle --console --eulas-agreed --required
+echo 'End install'
+
