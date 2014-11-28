@@ -13,21 +13,34 @@ sub change_mac {
 
 sub change_hostname {
 	my ($new_hostname) = @_;
-	my $cmd = "$gl_hostname_cmd $new_hostname";
+	#my $cmd = "$gl_hostname_cmd $new_hostname";
+	my $cmd = "echo $new_hostname > /etc/hostname";
+        print $cmd if $debug
 }
 
 sub setup_internet {
 	#here openvpn setup
+	#enable internet only for vmware
+	#add special grop for vmware
+	#iptables -A OUTPUT -m owner --gid-owner wino -j DROP
 }
 
-sub setup_nat_for_vm {
-	#vmware internet
+sub disable_logs {
+#	my ($new_hostname) = @_;
+	#my $cmd = "$gl_hostname_cmd $new_hostname";
+	#update-rc.d -f rsyslog remove
+	my $cmd_stop = "/etc/init.d/rsyslog stop";
+	my $cmd_del = "rm -rf /var/log/*";
+	my $cmd = "echo $new_hostname > /etc/hostname";
+        print $cmd if $debug
 }
+
+
+
 
 change_mac;
 setup_hostname;
 setup_internet;
-setup_nat_for_vm;
-disable_wifi;
-disable_journal;
+#disable_wifi;
+disable_logs;
 put_all_to_cache;
