@@ -29,6 +29,8 @@ create script archive:
     tar cf opt.tar ../../scripts
     gzip opt.tar
 
+Generate CD image
+------------------
 
 Run simple-cdd :
 
