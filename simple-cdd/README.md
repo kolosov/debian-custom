@@ -1,9 +1,12 @@
 simple-cdd
 ----------
-Introduction:
-We should make own debian-installer mirror to use latest daily builds of debian-installer.
 
-wget -r -np -R *.log* http://d-i.debian.org/daily-images/amd64/daily/
+Prepare latest d-i files
+-------------
+
+We should make own debian-installer mirror to use latest daily builds of debian-installer:
+
+    wget -r -np -R *.log* http://d-i.debian.org/daily-images/amd64/daily/
 
 simple-cdd expects directory structure like this:
 
@@ -12,16 +15,14 @@ simple-cdd expects directory structure like this:
     installer-amd64/current/images/cdrom/initrd.gz
     installer-amd64/current/images/cdrom/vmlinuz
 
-so reproduce similar di directory structure.
+so reproduce similar directory structure.
 
 Change simple-cdd-custom.conf custom_installer option.
 
+Install debian-cd from unstable(3.1.16)
+    apt-get install debian-cd -t unstable
 
-Preparation:
-
-install debian-cd from unstable(3.1.16)
-
-remove console-tools from default profile
+Remove console-tools from default profile (/usr/share/simple-cdd/profiles/default.downloads)
 
 create script archive:
 
