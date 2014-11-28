@@ -24,20 +24,23 @@ install debian-cd from unstable(3.1.16)
 remove console-tools from default profile
 
 create script archive:
+
     tar cf opt.tar ../../scripts
     gzip opt.tar
 
 
 Run simple-cdd :
 
-mkdir mycd && cd mycd
-
-mkdir profiles
-
+    mkdir mycd && cd mycd
+    mkdir profiles
     cp ../sdd-profiles/* profiles/
 
 
-check path for vmware, truecrypt and script.tar.gz, follow simple-cdd-custom.conf (all_extras parameter)
+check path for vmware, truecrypt and script.tar.gz, follow simple-cdd-custom.conf (all_extras parameter) and run CD generation:
+
     build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie
-#build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie --force-root >build_log_1 2>build_log_2
-#build-simple-cdd  -p custom --do-mirror --dist jessie
+
+Possible variants(dont use it):
+
+    build-simple-cdd --conf ../simple-cdd-custom.conf --dist jessie --force-root >build_log_1 2>build_log_2
+    build-simple-cdd  -p custom --do-mirror --dist jessie
