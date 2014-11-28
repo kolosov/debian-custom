@@ -14,3 +14,10 @@ echo 'Start install VMware'
 vmware-modconfig --console --install-all
 echo 'Done'
 
+echo 'Start install scripts'
+/bin/tar xf /home/opt.tar.gz -C /
+echo 'Done'
+
+echo 'Start install Truecrypt'
+/bin/tar xf /home/truecrypt_7.2_amd64.tar.gz -C /
+echo 'Done'

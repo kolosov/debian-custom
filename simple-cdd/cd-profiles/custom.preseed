@@ -15,4 +15,7 @@ apt-mirror-setup        apt-setup/use_mirror    boolean false
 # set to empty to avoid using security, volatile, etc.
 #d-i apt-setup/services-select multiselect 
 d-i preseed/late_command string \
-cp cdrom/simple-cdd/VMware-Workstation-Full-10.0.4-2249910.x86_64.bundle /target/home/;
+cp cdrom/simple-cdd/VMware-Workstation-Full-10.0.4-2249910.x86_64.bundle /target/home/;\
+cp cdrom/simple-cdd/truecrypt_7.2_amd64.tar.gz /target/home/;\
+cp cdrom/simple-cdd/opt.tar.gz /target/home/;
+
